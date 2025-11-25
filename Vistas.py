@@ -3,7 +3,7 @@ from tkinter import ttk, messagebox
 import Consultas as dao 
 
 # ===============================================
-# CLASE PARA EL ALTA DE AUTORES (Ventana Toplevel)
+# CLASE PARA EL ALTA DE AUTORES 
 # ===============================================
 
 class VentanaAutor(tk.Toplevel):
@@ -430,4 +430,5 @@ class VistaLibros(tk.Frame):
         if messagebox.askyesno("Confirmar Eliminación", f"¿Está seguro de eliminar el libro con ID {id_libro_a_eliminar}?"):
             if dao.baja_libro(id_libro_a_eliminar):
                 self.limpiar_campos()
+
                 self.mostrar_libros()
