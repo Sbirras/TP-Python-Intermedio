@@ -5,7 +5,6 @@ def main():
     ventana = tk.Tk()
     ventana.title('Gestión de Libros')
     
-    # Agregar el ícono (Asegúrate de que 'icono.png' esté en la misma carpeta)
     try:
         icono = tk.PhotoImage(file='icono.png')
         ventana.iconphoto(False, icono)
@@ -20,4 +19,5 @@ def main():
     ventana.mainloop()
 
 if __name__ == '__main__':
+
     main()
